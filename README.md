@@ -12,6 +12,6 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
 
 2.显示Note的时间戳
 -------------------
-### 实现显示NOte的实现戳，首先时间戳就是根据当前系统时间生成的一组随机数字，为此，要获取，
+### 实现显示NOte的实现戳，首先时间戳就是根据当前系统时间生成的一组随机数字，作为对数据唯一性的一种判断依据。避免了重复修改数据所带来的错误，先获取，用Timestamp now = new Timestamp(System.currentTimeMillis());//获取系统当前时间，再对时间戳进行返回，这时客户端就需要对时间戳做出处理，将时间戳转换为标准的时间格式，格式在NoteEditor的UpdateNote中进行修改，映射到数据库的PROJECTTION,绑定数据列的dataclolumn，还有绑定的ViewId，然后再listItem.xml文件添加时间戳的TEXTVIEW。
 
 ![image](https://github.com/Dabiuliu/notpad/blob/master/app/src/main/res/123/3.png)
