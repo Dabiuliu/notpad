@@ -74,4 +74,5 @@ This is an AndroidStudio rebuild of google SDK sample NotePad
         android:paddingLeft="200dip"
         android:gravity="bottom"/>
 </RelativeLayout>
+
 ![image](https://github.com/Dabiuliu/notpad/blob/master/app/src/main/res/123/3.png)
